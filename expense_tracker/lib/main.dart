@@ -1,13 +1,16 @@
-import 'package:flutter/material.dart';
-
 import 'src/app.dart';
-import 'src/settings/settings_controller.dart';
-import 'src/settings/settings_service.dart';
+import 'src/core/config/config.dart';
+import 'src/core/shared/shared.dart';
 
 void main() async {
-  final settingsController = SettingsController(SettingsService());
+  await AppConfig.init();
 
-  await settingsController.loadSettings();
-
-  runApp(MyApp(settingsController: settingsController));
+  runApp(
+    MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (_) => sl<ThemeBloc>()),
+      ],
+      child: const MainApp(),
+    ),
+  );
 }

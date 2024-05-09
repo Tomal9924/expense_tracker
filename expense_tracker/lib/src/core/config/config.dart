@@ -1,12 +1,7 @@
 library config;
 
-import 'dart:async';
-import 'dart:io';
 
-import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
-import 'package:hydrated_bloc/hydrated_bloc.dart';
-import 'package:path_provider/path_provider.dart';
+import '../shared/shared.dart';
 
 part 'dependencies.dart';
 part 'network_certificates.dart';

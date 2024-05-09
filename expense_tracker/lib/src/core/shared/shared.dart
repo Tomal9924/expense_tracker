@@ -21,3 +21,6 @@ export 'package:internet_connection_checker/internet_connection_checker.dart';
 export 'package:path_provider/path_provider.dart';
 export 'package:google_fonts/google_fonts.dart';
 export 'text_styles.dart';
+export 'package:expense_tracker/src/core/extension/theme.dart';
+export 'package:expense_tracker/src/features/dashboard/presentation/pages/dashboard.dart';
+

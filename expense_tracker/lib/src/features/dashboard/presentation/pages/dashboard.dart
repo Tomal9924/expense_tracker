@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import '../../../../core/shared/shared.dart';
 import '../../dashboard.dart';
 
@@ -35,6 +37,10 @@ class _DashboardPageState extends State<DashboardPage> {
             currentIndex = index;
           });
         },
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
       ),
     );
   }

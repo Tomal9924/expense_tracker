@@ -14,7 +14,8 @@ class ThemeScheme {
   final Color scoreCardBottom;
   final Color pink;
   final Color white;
-  final Gradient gradient;
+  final Gradient expenseGradient;
+  final Gradient incomeGradient;
 
   ThemeScheme({
     required this.backgroundPrimary,
@@ -29,7 +30,8 @@ class ThemeScheme {
     required this.scoreCardBottom,
     required this.pink,
     required this.white,
-    required this.gradient,
+    required this.expenseGradient,
+    required this.incomeGradient,
   });
 
   factory ThemeScheme.dark() {
@@ -46,15 +48,18 @@ class ThemeScheme {
       scoreCardBottom: const Color(0xFF00BAFF),
       pink: const Color(0xFFC521FF),
       white: const Color(0xFFFFFFFF),
-      gradient: const LinearGradient(
-        begin: Alignment.topCenter,
-        end: Alignment.bottomCenter,
-        stops: [0.04, 0.26, 0.68, 1.0],
+      expenseGradient: LinearGradient(
         colors: [
-          Color(0xFF0C131D),
-          Colors.transparent,
-          Colors.transparent,
-          Color(0xFF0C131D),
+          Colors.amber.shade200,
+          Colors.amber.shade500,
+          Colors.amber.shade700,
+        ],
+      ),
+      incomeGradient: LinearGradient(
+        colors: [
+          Colors.teal.shade200,
+          Colors.teal.shade500,
+          Colors.teal.shade700,
         ],
       ),
     );
@@ -77,15 +82,18 @@ class ThemeScheme {
       scoreCardBottom: const Color(0xFF00BAFF),
       pink: const Color(0xFFC521FF),
       white: const Color(0xFFFFFFFF),
-      gradient: const LinearGradient(
-        begin: Alignment.topCenter,
-        end: Alignment.bottomCenter,
-        stops: [0.04, 0.26, 0.68, 1.0],
+      expenseGradient: LinearGradient(
         colors: [
-          Color(0xFF0C131D),
-          Colors.transparent,
-          Colors.transparent,
-          Color(0xFF0C131D),
+          Colors.amber.shade200,
+          Colors.amber.shade500,
+          Colors.amber.shade700,
+        ],
+      ),
+      incomeGradient: LinearGradient(
+        colors: [
+          Colors.teal.shade200,
+          Colors.teal.shade500,
+          Colors.teal.shade700,
         ],
       ),
     );

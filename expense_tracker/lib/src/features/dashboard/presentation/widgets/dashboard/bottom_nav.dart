@@ -39,9 +39,7 @@ class DashboardBottomNavigation extends StatelessWidget {
                 children: List<_Item>.from(
                   [
                     const _Item(icon: Icons.home_rounded, label: "Dashboard"),
-                    const _Item(icon: Icons.list_alt_rounded, label: "Jobs"),
-                    const _Item(icon: Icons.account_balance_wallet_outlined, label: "Wallet"),
-                    const _Item(icon: Icons.settings, label: "Settings"),
+                    const _Item(icon: Icons.history, label: "History"),
                   ],
                 )
                     .mapIndexed<Widget>(
@@ -58,9 +56,6 @@ class DashboardBottomNavigation extends StatelessWidget {
                               onTap(itemIndex);
                               break;
                             case 2:
-                              onTap(itemIndex);
-                              break;
-                            case 3:
                               onTap(itemIndex);
                               break;
                           }

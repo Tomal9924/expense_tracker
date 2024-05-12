@@ -1,4 +1,5 @@
 
+import '../../features/dashboard/dashboard.dart';
 import '../shared/shared.dart';
 
 final router = GoRouter(

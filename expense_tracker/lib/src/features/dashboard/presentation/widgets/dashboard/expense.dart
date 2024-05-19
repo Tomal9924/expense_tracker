@@ -1,3 +1,5 @@
+import 'package:expense_tracker/src/core/shared/constants/constants.dart';
+
 import '../../../../../core/shared/shared.dart';
 
 class ExpenseCard extends StatelessWidget {
@@ -32,7 +34,7 @@ class ExpenseCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      "\$ 0.0",
+                      "$taka 0.0",
                       style: TextStyles.title(context: context, color: theme.textPrimary),
                     ),
                   ],
@@ -61,7 +63,7 @@ class ExpenseCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      "\$ 0.0",
+                      "$taka 0.0",
                       style: TextStyles.title(context: context, color: theme.textPrimary),
                     ),
                   ],

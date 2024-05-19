@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/shared/shared.dart';
 import '../../dashboard.dart';
+import '../widgets/add_expense.dart';
 
 class DashboardPage extends StatefulWidget {
   static const path = '/dashboard';
@@ -39,7 +40,16 @@ class _DashboardPageState extends State<DashboardPage> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+            context: context,
+            isScrollControlled: true,
+            builder: (context) => Padding(
+              padding: MediaQuery.of(context).viewInsets,
+              child: const AddExpense(),
+            ),
+          );
+        },
         child: const Icon(Icons.add),
       ),
     );

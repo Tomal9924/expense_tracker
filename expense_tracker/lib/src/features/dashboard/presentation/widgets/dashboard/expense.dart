@@ -1,4 +1,3 @@
-
 import '../../../../../core/shared/shared.dart';
 
 class ExpenseCard extends StatelessWidget {
@@ -22,7 +21,21 @@ class ExpenseCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16),
                   gradient: theme.expenseGradient,
-                  color: Colors.red.withAlpha(150),
+                  color: Colors.red.withAlpha(200),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Total Income",
+                      style: TextStyles.caption(context: context, color: theme.textPrimary),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      "\$ 0.0",
+                      style: TextStyles.title(context: context, color: theme.textPrimary),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -37,7 +50,21 @@ class ExpenseCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(16),
                   gradient: theme.incomeGradient,
-                  color: Colors.blue.withAlpha(100),
+                  color: Colors.blue.withAlpha(200),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Total expense",
+                      style: TextStyles.caption(context: context, color: theme.textPrimary),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      "\$ 0.0",
+                      style: TextStyles.title(context: context, color: theme.textPrimary),
+                    ),
+                  ],
                 ),
               ),
             ),

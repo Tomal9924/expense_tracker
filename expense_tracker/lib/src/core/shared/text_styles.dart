@@ -10,7 +10,7 @@ class TextStyles {
 
   static TextStyle caption({required BuildContext context, required Color color}) {
     return GoogleFonts.montserrat(
-      textStyle: Theme.of(context).textTheme.bodySmall?.copyWith(color: color),
+      textStyle: Theme.of(context).textTheme.bodySmall?.copyWith(color: color, fontWeight: FontWeight.bold),
     );
   }
 
